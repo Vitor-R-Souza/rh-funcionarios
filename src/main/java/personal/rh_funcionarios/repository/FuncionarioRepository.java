@@ -5,4 +5,5 @@ import personal.rh_funcionarios.model.FuncionarioModel;
 
 public interface FuncionarioRepository extends JpaRepository<FuncionarioModel, Long> {
     FuncionarioModel findByCpf(String cpf);
+    boolean existsByCpf(String cpf);
 }
