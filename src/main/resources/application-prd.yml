@@ -1,11 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-    username: ${PGUSER}
-    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://postgres:IboSdWkXaVRvkoEApniQlIUmEkfsmpzr@postgres.railway.internal:5432/railway
+    username: postgres
+    password: IboSdWkXaVRvkoEApniQlIUmEkfsmpzr
+    driver-class-name: org.postgresql.Driver
   jpa:
     open-in-view: false
     hibernate:
       ddl-auto: create
-
-# postgresql://postgres:sZQAFgpTIQlCYlMeCXqTllBoTLHIgtsS@metro.proxy.rlwy.net:17263/railway
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
