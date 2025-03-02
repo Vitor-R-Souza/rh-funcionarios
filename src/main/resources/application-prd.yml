@@ -1,13 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:IboSdWkXaVRvkoEApniQlIUmEkfsmpzr@postgres.railway.internal:5432/railway
-    username: postgres
-    password: IboSdWkXaVRvkoEApniQlIUmEkfsmpzr
-    driver-class-name: org.postgresql.Driver
+    url:
+    username:
+    password:
   jpa:
     open-in-view: false
     hibernate:
       ddl-auto: create
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
