@@ -27,6 +27,12 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+tasks.jar{
+	manifest{
+		attributes["Main-Class"] = "personal.rh_funcionarios.RhFuncionariosApplication"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
