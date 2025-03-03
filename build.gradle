@@ -4,8 +4,8 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+//sourceCompatibility = JavaVersion.VERSION_17
+//targetCompatibility = JavaVersion.VERSION_17
 group = 'personal'
 version = '0.0.1-SNAPSHOT'
 
